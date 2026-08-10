@@ -1,0 +1,21 @@
+{
+  "name": "markethub",
+  "version": "1.0.0",
+  "description": "MarketHub — Multi-vendor marketplace platform. Proprietary.",
+  "private": true,
+  "workspaces": ["apps/*", "services/*", "packages/*"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:api": "npm run dev --workspace=services/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "start": "npm run start --workspace=services/api",
+    "test": "jest --config tests/jest.config.js",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0"
+  },
+  "engines": { "node": ">=18" }
+}
