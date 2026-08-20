@@ -1,0 +1,7 @@
+{
+  "name": "@markethub/domain-modules",
+  "version": "2.0.0",
+  "private": true,
+  "main": "index.js",
+  "description": "Enterprise domain parameter models, normalization and repositories"
+}
