@@ -23,3 +23,8 @@ In-memory store. Production: PostgreSQL for users, sellers, products, orders, re
 - Image uploads
 - Multi-warehouse inventory
 - Settlement & payouts
+
+## Verification Standards
+- Automated test coverage exercises order state machine transitions and domain parameter models.
+- Monorepo follows non-fast-forward feature branch merges for auditing subsystem provenance.
+- Clean environment configuration with zero committed secrets.
